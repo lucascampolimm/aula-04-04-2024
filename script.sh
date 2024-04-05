@@ -43,7 +43,7 @@ for ((i=0; i<35; i++))
 do
     mkdir -v pasta$i
     # Tentando limpar buffer de saída da verbose do mkdir.
-    echo -e '\r'
+    # echo -e '\r'
 done
 
 echo
@@ -96,4 +96,3 @@ ls -ld pasta35
 echo
 
 echo "Ações concluídas."
-
