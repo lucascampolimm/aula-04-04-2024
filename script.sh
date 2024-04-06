@@ -3,7 +3,7 @@
 clear
 numero=0
 
-echo "Criando 10 usuários seguindo o padrão campolim-numero..."
+echo "Criando 10 usuários seguindo o padrão campolim-número..."
 echo
 
 for ((i=1; i<=10; i++))
@@ -35,7 +35,7 @@ echo "Usuário conectado: $nome_usuario"
 sudo su $nome_usuario &
 
 echo
-echo "Criando 35 pastas na home do último usuário criado com nomes aleatórios..."
+echo "Criando 35 pastas na home do último usuário criado com o padrão pasta-número..."
 echo
 
 cd ~
@@ -47,7 +47,7 @@ do
 done
 
 echo
-echo "Removendo 33 pastas criadas e seu respectivo conteúdo..."
+echo "Removendo 33 pastas criadas..."
 echo
 
 for ((i=0; i<33; i++))
@@ -56,7 +56,7 @@ do
 done
 
 echo
-echo "Acessando a pasta 34 e criando 10 arquivos do tipo pdf e 10 arquivos do tipo txt..."
+echo "Acessando a pasta 34 e criando 10 arquivos do tipo PDF e 10 do tipo TXT..."
 echo
 
 cd pasta34 || exit
@@ -76,7 +76,7 @@ cd ..
 cp -rv pasta34 pasta35
 
 echo
-echo "Removendo a pasta 34..."
+echo "Removendo a pasta 34 e seu respectivo conteúdo..."
 echo
 
 rm -rfv pasta34
